@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/chord-coach/static/css/main.c2cab247.css",
+    "main.js": "/chord-coach/static/js/main.102ca4c4.js",
+    "static/js/787.e49f09ed.chunk.js": "/chord-coach/static/js/787.e49f09ed.chunk.js",
+    "index.html": "/chord-coach/index.html",
+    "main.c2cab247.css.map": "/chord-coach/static/css/main.c2cab247.css.map",
+    "main.102ca4c4.js.map": "/chord-coach/static/js/main.102ca4c4.js.map",
+    "787.e49f09ed.chunk.js.map": "/chord-coach/static/js/787.e49f09ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.102ca4c4.js"
+  ]
+}
