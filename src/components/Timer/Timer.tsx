@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef, useState } from "react";
 
-const TIMER_DURATION_IN_SECONDS = 10;
+const TIMER_DURATION_IN_SECONDS = 600;
 
 interface TimerProps {
 	onComplete: () => void;

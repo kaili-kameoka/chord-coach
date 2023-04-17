@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouteObject } from "react-router-dom";
 import HomePage from "./page/HomePage/HomePage";
-import MelodicIntervalsPage from "./page/MelodicIntervalsPage/MelodicIntervalsPage";
 import Root from "./components/Root/Root";
 import CompletePage from "./page/CompletePage/CompletePage";
+import TriadChordsPage from "./page/TriadChordsPage/TriadChordsPage ";
 
 const routes: RouteObject[] = [
 	{
@@ -14,8 +14,8 @@ const routes: RouteObject[] = [
 				element: <HomePage/>
 			},
 			{
-				path: 'melodic-intervals',
-				element: <MelodicIntervalsPage />
+				path: 'triad-chords',
+				element: <TriadChordsPage />
 			},
 			{
 				path: 'complete',
