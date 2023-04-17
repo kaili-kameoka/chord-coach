@@ -1,15 +1,23 @@
 {
   "files": {
     "main.css": "/chord-coach/static/css/main.c2cab247.css",
-    "main.js": "/chord-coach/static/js/main.476d8ef8.js",
+    "main.js": "/chord-coach/static/js/main.5e95a86a.js",
     "static/js/787.e49f09ed.chunk.js": "/chord-coach/static/js/787.e49f09ed.chunk.js",
+    "static/media/c-aug-hint.mp3": "/chord-coach/static/media/c-aug-hint.0b4153f051382b071a8c.mp3",
+    "static/media/c-dim-hint.mp3": "/chord-coach/static/media/c-dim-hint.25166a2aef661d5d75bd.mp3",
+    "static/media/c-maj-hint.mp3": "/chord-coach/static/media/c-maj-hint.74e8ef249ab479d05fbf.mp3",
+    "static/media/c-min-hint.mp3": "/chord-coach/static/media/c-min-hint.b7c1017dd9719359bc02.mp3",
+    "static/media/c-aug.mp3": "/chord-coach/static/media/c-aug.1a26b8cbb44c4c36f121.mp3",
+    "static/media/c-dim.mp3": "/chord-coach/static/media/c-dim.41cc6ff03091b29738cd.mp3",
+    "static/media/c-maj.mp3": "/chord-coach/static/media/c-maj.5f2a05b815f9aca21dfb.mp3",
+    "static/media/c-min.mp3": "/chord-coach/static/media/c-min.64032f184846051c00e2.mp3",
     "index.html": "/chord-coach/index.html",
     "main.c2cab247.css.map": "/chord-coach/static/css/main.c2cab247.css.map",
-    "main.476d8ef8.js.map": "/chord-coach/static/js/main.476d8ef8.js.map",
+    "main.5e95a86a.js.map": "/chord-coach/static/js/main.5e95a86a.js.map",
     "787.e49f09ed.chunk.js.map": "/chord-coach/static/js/787.e49f09ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.476d8ef8.js"
+    "static/js/main.5e95a86a.js"
   ]
 }
