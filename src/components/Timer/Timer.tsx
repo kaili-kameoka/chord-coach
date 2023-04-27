@@ -51,17 +51,15 @@ const Timer: FC<TimerProps> = ({onComplete}) => {
 	}
 
 	useEffect(() => {
-		console.log("start timer");
 		return () => {
+			console.log("start timer");
 			clearTimer(getDeadTime())
 		}
 	}, []);
 
-	console.log("rerender")
 
 	return (
 		<>
-			<p>Timer</p>
 			<p className="text-center display-1">{timerText}</p>
 		</>
 	)
