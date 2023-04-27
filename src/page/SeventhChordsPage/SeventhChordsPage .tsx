@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import Timer from "../../components/Timer/Timer";
 import { useEffect, useRef, useState } from "react";
-import { seventhChordData } from "../../chords/7Chords";
+import { seventhChordData } from "../../chords/SeventhChords";
 import Controls from "../../components/Controls/Controls";
 import SeventhChordsAnswers from "./SeventhChordsAnswers";
 import { defaultAnswerState } from "./constants";
