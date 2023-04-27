@@ -3,6 +3,7 @@ import HomePage from "./page/HomePage/HomePage";
 import Root from "./components/Root/Root";
 import TriadChordsPage from "./page/TriadChordsPage/TriadChordsPage ";
 import SeventhChordsPage from "./page/SeventhChordsPage/SeventhChordsPage ";
+import MixedChordsPage from "./page/MixedChordsPage/MixedChordsPage ";
 
 const routes: RouteObject[] = [
 	{
@@ -20,6 +21,10 @@ const routes: RouteObject[] = [
 			{
 				path: '7th-chords',
 				element: <SeventhChordsPage />
+			},
+			{
+				path: 'mixed-chords',
+				element: <MixedChordsPage />
 			}
 		]
 	}

@@ -17,6 +17,11 @@ const HomePage = () => {
 								7th Chords
 							</RouterLinkButton>
 						</p>
+						<p className="d-flex gap-3 w-100">
+							<RouterLinkButton className={'flex-grow-1'} to={'mixed-chords'} variant={'dark'}>
+								Mixed Chords
+							</RouterLinkButton>
+						</p>
 					</Col>
 				</Row>
 			</>
