@@ -1,6 +1,5 @@
 import { Button } from "react-bootstrap";
 import { FC, ReactNode } from "react";
-import { log } from "util";
 
 interface PlayChordButtonProps {
 	src: string;
@@ -13,7 +12,6 @@ const PlayChordButton: FC<PlayChordButtonProps> = ({src, children}) => {
 	const makeOnClick = (src: string) => {
 		audio.src = src;
 		return () => {
-			console.log(audio.src);
 			audio.play().then((error) => {
 				console.log(error);
 			});

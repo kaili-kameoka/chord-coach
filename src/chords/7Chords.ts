@@ -1,6 +1,6 @@
 import c7DimFile from '../assets/c7-dim.mp3';
 import c7DimHintFile from '../assets/c7-dim-hint.mp3';
-import c7HalfDimFile from '../assets/c7-half-dim-hint.mp3';
+import c7HalfDimFile from '../assets/c7-half-dim.mp3';
 import c7HalfDimHintFile from '../assets/c7-half-dim-hint.mp3';
 import c7MinFile from '../assets/c7-min.mp3';
 import c7MinHintFile from '../assets/c7-min-hint.mp3';
@@ -11,7 +11,7 @@ import c7MajHintFile from '../assets/c7-min-hint.mp3';
 
 import { Chord, chordTypes } from "./types";
 
-export const sevenChordData: Chord[] = [
+export const seventhChordData: Chord[] = [
 	{
 		mainSrc: c7DimFile,
 		hintSrc: c7DimHintFile,

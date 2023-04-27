@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouteObject } from "react-router-dom";
 import HomePage from "./page/HomePage/HomePage";
 import Root from "./components/Root/Root";
-import CompletePage from "./page/CompletePage/CompletePage";
 import TriadChordsPage from "./page/TriadChordsPage/TriadChordsPage ";
+import SeventhChordsPage from "./page/SeventhChordsPage/SeventhChordsPage ";
 
 const routes: RouteObject[] = [
 	{
@@ -18,8 +18,8 @@ const routes: RouteObject[] = [
 				element: <TriadChordsPage />
 			},
 			{
-				path: 'complete',
-				element: <CompletePage />
+				path: '7th-chords',
+				element: <SeventhChordsPage />
 			}
 		]
 	}

@@ -17,9 +17,6 @@ const HomePage = () => {
 								7th Chords
 							</RouterLinkButton>
 						</p>
-						<p className="d-flex w-100">
-
-						</p>
 					</Col>
 				</Row>
 			</>

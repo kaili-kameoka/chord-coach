@@ -5,7 +5,7 @@ export const chordTypes = {
 	aug: "Augmented",
 	dim7: "Diminished 7th",
 	halfDim7: "Half Diminished 7th",
-	min7: "Minor 7Th",
+	min7: "Minor 7th",
 	majMin7: "Major Minor 7th",
 	maj7: "Major 7th"
 }

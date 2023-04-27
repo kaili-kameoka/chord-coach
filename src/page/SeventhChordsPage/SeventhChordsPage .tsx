@@ -1,22 +1,21 @@
 import { Container } from "react-bootstrap";
 import Timer from "../../components/Timer/Timer";
 import { useEffect, useRef, useState } from "react";
-import { triadChordData } from "../../chords/triads";
+import { seventhChordData } from "../../chords/7Chords";
 import Controls from "../../components/Controls/Controls";
-import TriadChordsAnswers from "./triadChordsAnswers";
+import SeventhChordsAnswers from "./SeventhChordsAnswers";
 import { defaultAnswerState } from "./constants";
 import NextChordModal from "../../components/NextChordModal/NextchordModal";
 import RouterLinkButton from "../../components/RouterLinkButton/RouterLinkButton";
 
 const MODAL_TIMEOUT = 3000
 
-const TriadChordsPage = () => {
+const SeventhChordsPage = () => {
 	const [chordIndex, setChordIndex] = useState(-1);
 	const [score, setScore] = useState(0);
 	const [answerState, setAnswerState] = useState(defaultAnswerState);
 	const [showModal, setShowModal] = useState(false);
 	const [gameOver, setGameOver] = useState(false);
-
 	const modalTimeOutRef = useRef<null | NodeJS.Timeout>(null);
 
 	const onComplete = () => {
@@ -25,10 +24,11 @@ const TriadChordsPage = () => {
 
 
 	const setNewChord = () => {
-		const newChordIndex = Math.floor(Math.random() * triadChordData.length);
+		const newChordIndex = Math.floor(Math.random() * seventhChordData.length);
 		if (newChordIndex === chordIndex) {
 			setNewChord();
 		} else {
+			console.log(seventhChordData[newChordIndex])
 			setChordIndex(newChordIndex);
 		}
 	}
@@ -39,7 +39,7 @@ const TriadChordsPage = () => {
 
 	useEffect(() => {
 		if (chordIndex >= 0 && !gameOver) {
-			const audio = new Audio(triadChordData[chordIndex].mainSrc)
+			const audio = new Audio(seventhChordData[chordIndex].mainSrc)
 			audio.play();
 		}
 	}, [chordIndex]);
@@ -87,19 +87,19 @@ const TriadChordsPage = () => {
 					{chordIndex >= 0 && (
 						<>
 							<Controls
-								mainSrc={triadChordData[chordIndex].mainSrc}
-								hintSrc={triadChordData[chordIndex].hintSrc}
+								mainSrc={seventhChordData[chordIndex].mainSrc}
+								hintSrc={seventhChordData[chordIndex].hintSrc}
 								score={score}
 							/>
-							<TriadChordsAnswers
-								answer={triadChordData[chordIndex].type}
+							<SeventhChordsAnswers
+								answer={seventhChordData[chordIndex].type}
 								setAnswerState={setAnswerState}
 								currentAnswerState={answerState}
 								onCorrectAnswer={onCorrectAnswer}
 							/>
 							<NextChordModal show={showModal} handleClose={handleCloseModal}>
 								<p className="display-1 text-center">
-									C {triadChordData[chordIndex].type}
+									C {seventhChordData[chordIndex].type}
 								</p>
 							</NextChordModal>
 						</>
@@ -110,4 +110,4 @@ const TriadChordsPage = () => {
 	)
 }
 
-export default TriadChordsPage;
+export default SeventhChordsPage;
