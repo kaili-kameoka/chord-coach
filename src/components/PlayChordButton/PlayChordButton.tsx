@@ -1,29 +1,29 @@
 import { Button } from "react-bootstrap";
 import { FC, ReactNode } from "react";
+import { log } from "util";
 
 interface PlayChordButtonProps {
 	src: string;
 	children: ReactNode;
 }
 
-const PlayChordButton: FC<PlayChordButtonProps> = ({ src, children}) => {
+const PlayChordButton: FC<PlayChordButtonProps> = ({src, children}) => {
 	const audio = new Audio();
 
 	const makeOnClick = (src: string) => {
 		audio.src = src;
-		return async () => {
-			try {
-				await audio.play();
-			} catch (error) {
-				console.error(error)
-			}
+		return () => {
+			audio.play().then((error) => {
+				console.log(error);
+			});
+
 		}
 	}
 
 	return (
-			<Button onClick={makeOnClick(src)}>
-				{children}
-			</Button>
+		<Button onClick={makeOnClick(src)}>
+			{children}
+		</Button>
 	)
 }
 
