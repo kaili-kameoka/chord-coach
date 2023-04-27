@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef, useState } from "react";
 
-const TIMER_DURATION_IN_SECONDS = 600;
+const TIMER_DURATION_IN_SECONDS = 300;
 
 interface TimerProps {
 	onComplete: () => void;
@@ -18,7 +18,6 @@ const Timer: FC<TimerProps> = ({onComplete}) => {
 	}
 
 	const clearTimer = (deadline: Date) => {
-		setTimerText('01:00');
 
 		if (ref.current) clearInterval(ref.current);
 
@@ -51,7 +50,6 @@ const Timer: FC<TimerProps> = ({onComplete}) => {
 	}
 
 	useEffect(() => {
-		console.log("start timer");
 		clearTimer(getDeadTime());
 	}, []);
 

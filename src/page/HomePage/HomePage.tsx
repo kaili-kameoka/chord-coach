@@ -9,7 +9,6 @@ const HomePage = () => {
 				</h1>
 				<Row className="my-5 d-flex justify-content-center">
 					<Col md={6} className={'d-flex flex-column align-items-center'}>
-						<p className={"text-center"}>v1</p>
 						<p className="d-flex gap-3 w-100">
 							<RouterLinkButton className={'flex-grow-1'} to={'triad-chords'} variant={'dark'}>
 								Triad Chords
