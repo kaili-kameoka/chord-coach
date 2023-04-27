@@ -6,7 +6,7 @@ interface TimerProps {
 	onComplete: () => void;
 }
 
-const Timer: FC<TimerProps> = ({ onComplete }) => {
+const Timer: FC<TimerProps> = ({onComplete}) => {
 	const ref = useRef<null | NodeJS.Timer>(null);
 	const [timerText, setTimerText] = useState<string>('00:00');
 
@@ -23,6 +23,7 @@ const Timer: FC<TimerProps> = ({ onComplete }) => {
 		if (ref.current) clearInterval(ref.current);
 
 		ref.current = setInterval(() => {
+			console.log("Update timer")
 			startTimer(deadline)
 		}, 1000)
 	}
@@ -50,13 +51,19 @@ const Timer: FC<TimerProps> = ({ onComplete }) => {
 	}
 
 	useEffect(() => {
+		console.log("start timer");
 		return () => {
 			clearTimer(getDeadTime())
-		};
+		}
 	}, []);
 
+	console.log("rerender")
+
 	return (
+		<>
+			<p>Timer</p>
 			<p className="text-center display-1">{timerText}</p>
+		</>
 	)
 }
 

@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import { ChordTypeLongName, chordTypes } from "../../types";
+import { ChordTypeLongName, chordTypes } from "../../chords/types";
 import { FC, MouseEventHandler } from "react";
 import { AnswerState } from "./types";
 import { defaultAnswerState } from "./constants";

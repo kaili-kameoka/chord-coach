@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Timer from "../../components/Timer/Timer";
 import { useEffect, useRef, useState } from "react";
-import { triadChordData } from "../../chords";
+import { triadChordData } from "../../chords/triads";
 import Controls from "../../components/Controls/Controls";
 import TriadChordsAnswers from "./triadChordsAnswers";
 import { defaultAnswerState } from "./constants";

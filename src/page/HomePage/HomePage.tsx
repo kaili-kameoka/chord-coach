@@ -13,14 +13,12 @@ const HomePage = () => {
 							<RouterLinkButton className={'flex-grow-1'} to={'triad-chords'} variant={'dark'}>
 								Triad Chords
 							</RouterLinkButton>
-							<RouterLinkButton className={'flex-grow-1'} to={'inverted-chords'} variant={'dark'}>
-								Chord Inversions
-							</RouterLinkButton>
-						</p>
-						<p className="d-flex w-100">
 							<RouterLinkButton className={'flex-grow-1'} to={'7th-chords'} variant={'dark'}>
 								7th Chords
 							</RouterLinkButton>
+						</p>
+						<p className="d-flex w-100">
+
 						</p>
 					</Col>
 				</Row>
