@@ -11,8 +11,12 @@ const PlayChordButton: FC<PlayChordButtonProps> = ({ src, children}) => {
 
 	const makeOnClick = (src: string) => {
 		audio.src = src;
-		return () => {
-			audio.play();
+		return async () => {
+			try {
+				await audio.play();
+			} catch (error) {
+				console.error(error)
+			}
 		}
 	}
 
