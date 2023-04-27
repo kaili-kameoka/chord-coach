@@ -51,10 +51,8 @@ const Timer: FC<TimerProps> = ({onComplete}) => {
 	}
 
 	useEffect(() => {
-		return () => {
-			console.log("start timer");
-			clearTimer(getDeadTime())
-		}
+		console.log("start timer");
+		clearTimer(getDeadTime();
 	}, []);
 
 
