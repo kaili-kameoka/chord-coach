@@ -1,7 +1,7 @@
 {
   "name": "chord-coach",
   "version": "0.1.0",
-  "homepage": "https://kaili-kameoka.github.io/chord-coach/",
+  "homepage": "https://chord-coach.kaili.me/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",

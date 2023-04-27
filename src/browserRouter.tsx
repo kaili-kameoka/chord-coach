@@ -6,7 +6,7 @@ import TriadChordsPage from "./page/TriadChordsPage/TriadChordsPage ";
 
 const routes: RouteObject[] = [
 	{
-		path: '/chord-coach',
+		path: '/',
 		element: <Root />,
 		children: [
 			{
