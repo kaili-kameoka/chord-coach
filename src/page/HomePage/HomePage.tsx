@@ -22,6 +22,11 @@ const HomePage = () => {
 								Mixed Chords
 							</RouterLinkButton>
 						</p>
+						<p className="d-flex gap-3 w-100 my-5">
+							<RouterLinkButton className={'flex-grow-1'} to={'instructions'} variant={'outline-dark'}>
+								How It Works
+							</RouterLinkButton>
+						</p>
 					</Col>
 				</Row>
 			</>

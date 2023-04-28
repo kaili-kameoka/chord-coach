@@ -4,6 +4,7 @@ import Root from "./components/Root/Root";
 import TriadChordsPage from "./page/TriadChordsPage/TriadChordsPage ";
 import SeventhChordsPage from "./page/SeventhChordsPage/SeventhChordsPage ";
 import MixedChordsPage from "./page/MixedChordsPage/MixedChordsPage ";
+import InstructionsPage from "./page/InstructionsPage/InstructionsPage";
 
 const routes: RouteObject[] = [
 	{
@@ -25,6 +26,10 @@ const routes: RouteObject[] = [
 			{
 				path: 'mixed-chords',
 				element: <MixedChordsPage />
+			},
+			{
+				path: 'instructions',
+				element: <InstructionsPage />
 			}
 		]
 	}
